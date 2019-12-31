@@ -4,6 +4,7 @@
       Download it using command:
       ```bash
       $ sudo apt-get install mpg123
+      $ sudo apt-get install firefox
       ```
       
   * ## Usage:
