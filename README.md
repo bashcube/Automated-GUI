@@ -15,7 +15,7 @@
       Change the directory and run the pythn file using command:
       ```bash
       $ cd Automated-GUI
-      $ python tasks.py
+      $ python task.py
       ```
       
    * ## Description:
