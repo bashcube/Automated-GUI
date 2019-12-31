@@ -1,0 +1,39 @@
+STEPS TO ENABLE THE EXECUTION OF PYTHON FILE AT BOOT TIME:
+
+
+STEP 1:
+Create the python file.
+
+STEP 2:
+Place the python code in "/usr/bin" directory and give executable permission
+to the file.
+
+STEP 3:
+Create a "unit-file", specifying the directions for systemctl to start the code
+at launch time.
+
+Contents OF Unit-File<.service file>:
+[Unit]
+Description=A python code to automate three most done tasks.
+
+[Service]
+Type=simple
+ExecStart=python3 /usr/bin/task.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target 
+
+
+STEP 4:
+Enable the systemd service using command:
+$ sudo systemctl start task
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart task
+$ sudo systemctl enable task
+
+The following command enables the code to start at boot-time.
+
+Thus, The following steps enable the code at boot-time by creating a 
+service. 
