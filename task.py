@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import font
 import os
 
-GIT_REPO = "https://github.com/bashcube/"
-GMAIL_ACC = "https://gmail.com"
-SONG_LIST = "/$USER/Music/"
+GIT_REPO = "https://github.com/<Your repo>/" # link to your git repo
+GMAIL_ACC = "https://gmail.com" # password saved in the keychain of browser.
+SONG_LIST = "/$USER/Music/" # path for music playlist directory
 
 def opengit():
 	os.system("firefox --new-window -url "+GIT_REPO)
