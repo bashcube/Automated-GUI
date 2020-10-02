@@ -1,10 +1,15 @@
-# Automated-GUI
+# Automating Tasks with GUI
   * ## Requirements:
-      The system must have mpg123 installed in order to run the task.
-      Download it using command:
+      For Debian Based Systems, install firefox browser for opening github pages,
+      and mpg123 for playing musing in the terminal.
       ```bash
-      $ sudo apt-get install mpg123
       $ sudo apt-get install firefox
+      $ sudo apt-get install mpg123
+      ```
+      Systems which use rpm packages, install the above using command:
+      ```bash
+      $ sudo dnf install firefox
+      $ sudo dnf install mpg123
       ```
       
   * ## Usage:
@@ -19,8 +24,12 @@
       ```
       
    * ## Description:
-       The following python code automates three most done tasks 
+       The following python code automates three tasks 
        through simple GUI and displays the result accordingly.
+       These tasks are:
+       * Opening Github Account.
+       * Opening Gmail Account.
+       * Playing Music from the respective directory.
        The python file contains the code and the text file contains the 
        process of automating the program to start at boot.
        
